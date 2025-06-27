@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GraphRAG 知识图谱可视化</title>
+
+    <!-- vis-network CSS -->
+    <link
+      href="https://unpkg.com/vis-network/standalone/umd/vis-network.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- 自定义样式 -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar">
+        <div class="header">
+          <h1>🕸️ 知识图谱</h1>
+          <p>GraphRAG 可视化分析</p>
+        </div>
+
+        <div class="control-section">
+          <h3>搜索过滤</h3>
+          <input
+            type="text"
+            id="search-input"
+            class="search-box"
+            placeholder="搜索节点名称..."
+          />
+          <div class="button-group">
+            <button class="btn btn-primary" onclick="searchNodes()">
+              搜索
+            </button>
+            <button class="btn btn-secondary" onclick="clearSearch()">
+              清除
+            </button>
+          </div>
+        </div>
+
+        <div class="control-section">
+          <h3>关系类型过滤</h3>
+          <div class="filter-group">
+            <div id="relationship-filters" class="checkbox-group">
+              <!-- 动态生成关系类型过滤器 -->
+            </div>
+          </div>
+          <div class="button-group">
+            <button class="btn btn-primary" onclick="selectAllRelationships()">
+              全选
+            </button>
+            <button
+              class="btn btn-secondary"
+              onclick="deselectAllRelationships()"
+            >
+              全不选
+            </button>
+          </div>
+        </div>
+
+        <div class="control-section">
+          <h3>布局控制</h3>
+          <div class="button-group">
+            <button class="btn btn-primary" onclick="fitNetwork()">
+              适应窗口
+            </button>
+            <button class="btn btn-secondary" onclick="resetLayout()">
+              重置布局
+            </button>
+          </div>
+          <div class="button-group" style="margin-top: 10px">
+            <button class="btn btn-primary" onclick="togglePhysics()">
+              物理引擎
+            </button>
+            <button class="btn btn-secondary" onclick="exportNetwork()">
+              导出图片
+            </button>
+          </div>
+        </div>
+
+        <div class="stats">
+          <h4>📊 图谱统计</h4>
+          <div class="stat-item">
+            <span>节点数量:</span>
+            <span id="node-count">-</span>
+          </div>
+          <div class="stat-item">
+            <span>边数量:</span>
+            <span id="edge-count">-</span>
+          </div>
+          <div class="stat-item">
+            <span>关系类型:</span>
+            <span id="relationship-types">-</span>
+          </div>
+        </div>
+
+        <div class="legend">
+          <h4>🎨 关系图例</h4>
+          <div id="relationship-legend">
+            <!-- 动态生成关系图例 -->
+          </div>
+        </div>
+      </div>
+
+      <div class="main-content">
+        <div id="loading" class="loading">正在加载知识图谱...</div>
+        <div id="network-container"></div>
+      </div>
+    </div>
+
+    <!-- vis-network JavaScript -->
+    <script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+
+    <!-- 自定义脚本 -->
+    <script src="script.js"></script>
+  </body>
+</html>

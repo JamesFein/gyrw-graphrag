@@ -1,0 +1,983 @@
+[
+  {
+    "id": "6cb16c5f",
+    "from": "函数",
+    "to": "形参",
+    "label": "CONTAINS",
+    "title": "<b>CONTAINS</b><br/>函数 → 形参<br/>The entities \"函数\" (function) and \"形参\" (formal parameter) are closely related concepts in programming. A \"函数\" is a block of code designed to perform a specific task, and it often requires input values ...",
+    "color": {
+      "color": "#32CD32",
+      "highlight": "#32CD32"
+    },
+    "width": 5,
+    "arrows": {
+      "to": {
+        "enabled": true,
+        "type": "box"
+      }
+    },
+    "dashes": false,
+    "smooth": {
+      "enabled": true,
+      "type": "dynamic"
+    },
+    "physics": true
+  },
+  {
+    "id": "48d10b8a",
+    "from": "函数",
+    "to": "实参",
+    "label": "USES",
+    "title": "<b>USES</b><br/>函数 → 实参<br/>USES...",
+    "color": {
+      "color": "#00CED1",
+      "highlight": "#00CED1"
+    },
+    "width": 5,
+    "arrows": {
+      "to": {
+        "enabled": true,
+        "type": "bar"
+      }
+    },
+    "dashes": false,
+    "smooth": {
+      "enabled": true,
+      "type": "dynamic"
+    },
+    "physics": true
+  },
+  {
+    "id": "9ec59a51",
+    "from": "函数",
+    "to": "返回值",
+    "label": "UNKNOWN",
+    "title": "<b>UNKNOWN</b><br/>函数 → 返回值<br/>The entities \"函数\" (function) and \"返回值\" (return value) are closely related in the context of programming and computer science. A \"函数\" is a fundamental construct that performs a specific task or calcula...",
+    "color": {
+      "color": "#C0C0C0",
+      "highlight": "#C0C0C0"
+    },
+    "width": 5,
+    "arrows": {
+      "to": {
+        "enabled": true,
+        "type": "arrow"
+      }
+    },
+    "dashes": [
+      2,
+      2
+    ],
+    "smooth": {
+      "enabled": true,
+      "type": "dynamic"
+    },
+    "physics": true
+  },
+  {
+    "id": "b0b21073",
+    "from": "函数",
+    "to": "位置实参",
+    "label": "USES",
+    "title": "<b>USES</b><br/>函数 → 位置实参<br/>USES...",
+    "color": {
+      "color": "#00CED1",
+      "highlight": "#00CED1"
+    },
+    "width": 5,
+    "arrows": {
+      "to": {
+        "enabled": true,
+        "type": "bar"
+      }
+    },
+    "dashes": false,
+    "smooth": {
+      "enabled": true,
+      "type": "dynamic"
+    },
+    "physics": true
+  },
+  {
+    "id": "7af813fb",
+    "from": "函数",
+    "to": "关键字实参",
+    "label": "USES",
+    "title": "<b>USES</b><br/>函数 → 关键字实参<br/>USES...",
+    "color": {
+      "color": "#00CED1",
+      "highlight": "#00CED1"
+    },
+    "width": 5,
+    "arrows": {
+      "to": {
+        "enabled": true,
+        "type": "bar"
+      }
+    },
+    "dashes": false,
+    "smooth": {
+      "enabled": true,
+      "type": "dynamic"
+    },
+    "physics": true
+  },
+  {
+    "id": "06e6f99c",
+    "from": "函数",
+    "to": "默认值",
+    "label": "HAS_PROPERTY",
+    "title": "<b>HAS_PROPERTY</b><br/>函数 → 默认值<br/>The entities \"函数\" (function) and \"默认值\" (default value) are related in that a function can have the property of possessing default values for its parameters. This means that \"函数\" (function) HAS_PROPERT...",
+    "color": {
+      "color": "#C0C0C0",
+      "highlight": "#C0C0C0"
+    },
+    "width": 5,
+    "arrows": {
+      "to": {
+        "enabled": true,
+        "type": "arrow"
+      }
+    },
+    "dashes": [
+      2,
+      2
+    ],
+    "smooth": {
+      "enabled": true,
+      "type": "dynamic"
+    },
+    "physics": true
+  },
+  {
+    "id": "bdc8c4cd",
+    "from": "形参",
+    "to": "实参",
+    "label": "RELATED_TO",
+    "title": "<b>RELATED_TO</b><br/>形参 → 实参<br/>RELATED_TO...",
+    "color": {
+      "color": "#808080",
+      "highlight": "#808080"
+    },
+    "width": 5,
+    "arrows": {
+      "to": {
+        "enabled": true,
+        "type": "arrow"
+      }
+    },
+    "dashes": [
+      3,
+      3
+    ],
+    "smooth": {
+      "enabled": true,
+      "type": "dynamic"
+    },
+    "physics": true
+  },
+  {
+    "id": "445503a4",
+    "from": "形参",
+    "to": "关键字实参",
+    "label": "RELATED_TO",
+    "title": "<b>RELATED_TO</b><br/>形参 → 关键字实参<br/>RELATED_TO...",
+    "color": {
+      "color": "#808080",
+      "highlight": "#808080"
+    },
+    "width": 5,
+    "arrows": {
+      "to": {
+        "enabled": true,
+        "type": "arrow"
+      }
+    },
+    "dashes": [
+      3,
+      3
+    ],
+    "smooth": {
+      "enabled": true,
+      "type": "dynamic"
+    },
+    "physics": true
+  },
+  {
+    "id": "5547b8ec",
+    "from": "形参",
+    "to": "默认值",
+    "label": "UNKNOWN",
+    "title": "<b>UNKNOWN</b><br/>形参 → 默认值<br/>The entities \"形参\" (formal parameter) and \"默认值\" (default value) are related in the context of programming and function definitions. \"形参\" refers to the parameters defined in a function's declaration, wh...",
+    "color": {
+      "color": "#C0C0C0",
+      "highlight": "#C0C0C0"
+    },
+    "width": 5,
+    "arrows": {
+      "to": {
+        "enabled": true,
+        "type": "arrow"
+      }
+    },
+    "dashes": [
+      2,
+      2
+    ],
+    "smooth": {
+      "enabled": true,
+      "type": "dynamic"
+    },
+    "physics": true
+  },
+  {
+    "id": "ae280eb9",
+    "from": "位置实参的顺序",
+    "to": "位置实参",
+    "label": "HAS_PROPERTY",
+    "title": "<b>HAS_PROPERTY</b><br/>位置实参的顺序 → 位置实参<br/>HAS_PROPERTY...",
+    "color": {
+      "color": "#C0C0C0",
+      "highlight": "#C0C0C0"
+    },
+    "width": 5,
+    "arrows": {
+      "to": {
+        "enabled": true,
+        "type": "arrow"
+      }
+    },
+    "dashes": [
+      2,
+      2
+    ],
+    "smooth": {
+      "enabled": true,
+      "type": "dynamic"
+    },
+    "physics": true
+  },
+  {
+    "id": "1e70a1af",
+    "from": "实参",
+    "to": "位置实参",
+    "label": "IS_A",
+    "title": "<b>IS_A</b><br/>实参 → 位置实参<br/>IS_A...",
+    "color": {
+      "color": "#2B7CE9",
+      "highlight": "#2B7CE9"
+    },
+    "width": 5,
+    "arrows": {
+      "to": {
+        "enabled": true,
+        "type": "arrow"
+      }
+    },
+    "dashes": false,
+    "smooth": {
+      "enabled": true,
+      "type": "dynamic"
+    },
+    "physics": true
+  },
+  {
+    "id": "82be0764",
+    "from": "实参",
+    "to": "关键字实参",
+    "label": "IS_A",
+    "title": "<b>IS_A</b><br/>实参 → 关键字实参<br/>IS_A...",
+    "color": {
+      "color": "#2B7CE9",
+      "highlight": "#2B7CE9"
+    },
+    "width": 5,
+    "arrows": {
+      "to": {
+        "enabled": true,
+        "type": "arrow"
+      }
+    },
+    "dashes": false,
+    "smooth": {
+      "enabled": true,
+      "type": "dynamic"
+    },
+    "physics": true
+  },
+  {
+    "id": "f0cf0a54",
+    "from": "实参",
+    "to": "列表",
+    "label": "UNKNOWN",
+    "title": "<b>UNKNOWN</b><br/>实参 → 列表<br/>The entities \"实参\" (actual parameter) and \"列表\" (list) are related concepts in programming. \"实参\" refers to the actual values or variables that are passed to a function when it is called, as opposed to \"...",
+    "color": {
+      "color": "#C0C0C0",
+      "highlight": "#C0C0C0"
+    },
+    "width": 5,
+    "arrows": {
+      "to": {
+        "enabled": true,
+        "type": "arrow"
+      }
+    },
+    "dashes": [
+      2,
+      2
+    ],
+    "smooth": {
+      "enabled": true,
+      "type": "dynamic"
+    },
+    "physics": true
+  },
+  {
+    "id": "ac509ae8",
+    "from": "位置实参",
+    "to": "位置实参的顺序",
+    "label": "HAS_PROPERTY",
+    "title": "<b>HAS_PROPERTY</b><br/>位置实参 → 位置实参的顺序<br/>HAS_PROPERTY...",
+    "color": {
+      "color": "#C0C0C0",
+      "highlight": "#C0C0C0"
+    },
+    "width": 5,
+    "arrows": {
+      "to": {
+        "enabled": true,
+        "type": "arrow"
+      }
+    },
+    "dashes": [
+      2,
+      2
+    ],
+    "smooth": {
+      "enabled": true,
+      "type": "dynamic"
+    },
+    "physics": true
+  },
+  {
+    "id": "8ef5e67e",
+    "from": "实参",
+    "to": "形参",
+    "label": "RELATED_TO",
+    "title": "<b>RELATED_TO</b><br/>实参 → 形参<br/>RELATED_TO...",
+    "color": {
+      "color": "#808080",
+      "highlight": "#808080"
+    },
+    "width": 5,
+    "arrows": {
+      "to": {
+        "enabled": true,
+        "type": "arrow"
+      }
+    },
+    "dashes": [
+      3,
+      3
+    ],
+    "smooth": {
+      "enabled": true,
+      "type": "dynamic"
+    },
+    "physics": true
+  },
+  {
+    "id": "6f395be7",
+    "from": "实参",
+    "to": "默认值",
+    "label": "RELATED_TO",
+    "title": "<b>RELATED_TO</b><br/>实参 → 默认值<br/>RELATED_TO...",
+    "color": {
+      "color": "#808080",
+      "highlight": "#808080"
+    },
+    "width": 5,
+    "arrows": {
+      "to": {
+        "enabled": true,
+        "type": "arrow"
+      }
+    },
+    "dashes": [
+      3,
+      3
+    ],
+    "smooth": {
+      "enabled": true,
+      "type": "dynamic"
+    },
+    "physics": true
+  },
+  {
+    "id": "5db18ef8",
+    "from": "形参",
+    "to": "位置实参的顺序",
+    "label": "RELATED_TO",
+    "title": "<b>RELATED_TO</b><br/>形参 → 位置实参的顺序<br/>RELATED_TO...",
+    "color": {
+      "color": "#808080",
+      "highlight": "#808080"
+    },
+    "width": 5,
+    "arrows": {
+      "to": {
+        "enabled": true,
+        "type": "arrow"
+      }
+    },
+    "dashes": [
+      3,
+      3
+    ],
+    "smooth": {
+      "enabled": true,
+      "type": "dynamic"
+    },
+    "physics": true
+  },
+  {
+    "id": "2930df5b",
+    "from": "形参",
+    "to": "位置实参",
+    "label": "RELATED_TO",
+    "title": "<b>RELATED_TO</b><br/>形参 → 位置实参<br/>RELATED_TO...",
+    "color": {
+      "color": "#808080",
+      "highlight": "#808080"
+    },
+    "width": 5,
+    "arrows": {
+      "to": {
+        "enabled": true,
+        "type": "arrow"
+      }
+    },
+    "dashes": [
+      3,
+      3
+    ],
+    "smooth": {
+      "enabled": true,
+      "type": "dynamic"
+    },
+    "physics": true
+  },
+  {
+    "id": "55bfd6a3",
+    "from": "位置实参",
+    "to": "关键字实参",
+    "label": "OPPOSES",
+    "title": "<b>OPPOSES</b><br/>位置实参 → 关键字实参<br/>OPPOSES...",
+    "color": {
+      "color": "#C0C0C0",
+      "highlight": "#C0C0C0"
+    },
+    "width": 5,
+    "arrows": {
+      "to": {
+        "enabled": true,
+        "type": "arrow"
+      }
+    },
+    "dashes": [
+      2,
+      2
+    ],
+    "smooth": {
+      "enabled": true,
+      "type": "dynamic"
+    },
+    "physics": true
+  },
+  {
+    "id": "9c79c35a",
+    "from": "位置实参的顺序",
+    "to": "关键字实参",
+    "label": "OPPOSES",
+    "title": "<b>OPPOSES</b><br/>位置实参的顺序 → 关键字实参<br/>OPPOSES...",
+    "color": {
+      "color": "#C0C0C0",
+      "highlight": "#C0C0C0"
+    },
+    "width": 5,
+    "arrows": {
+      "to": {
+        "enabled": true,
+        "type": "arrow"
+      }
+    },
+    "dashes": [
+      2,
+      2
+    ],
+    "smooth": {
+      "enabled": true,
+      "type": "dynamic"
+    },
+    "physics": true
+  },
+  {
+    "id": "924065f8",
+    "from": "函数",
+    "to": "WHILE循环",
+    "label": "UNKNOWN",
+    "title": "<b>UNKNOWN</b><br/>函数 → WHILE循环<br/>The entities \"函数\" (functions) and \"WHILE循环\" (while loops) are related in programming. A \"WHILE循环\" is a type of control flow statement that repeatedly executes a block of code as long as a specified co...",
+    "color": {
+      "color": "#C0C0C0",
+      "highlight": "#C0C0C0"
+    },
+    "width": 5,
+    "arrows": {
+      "to": {
+        "enabled": true,
+        "type": "arrow"
+      }
+    },
+    "dashes": [
+      2,
+      2
+    ],
+    "smooth": {
+      "enabled": true,
+      "type": "dynamic"
+    },
+    "physics": true
+  },
+  {
+    "id": "84a3cc33",
+    "from": "函数",
+    "to": "列表",
+    "label": "USES",
+    "title": "<b>USES</b><br/>函数 → 列表<br/>USES...",
+    "color": {
+      "color": "#00CED1",
+      "highlight": "#00CED1"
+    },
+    "width": 5,
+    "arrows": {
+      "to": {
+        "enabled": true,
+        "type": "bar"
+      }
+    },
+    "dashes": false,
+    "smooth": {
+      "enabled": true,
+      "type": "dynamic"
+    },
+    "physics": true
+  },
+  {
+    "id": "e550ba64",
+    "from": "返回值",
+    "to": "列表",
+    "label": "IS_A",
+    "title": "<b>IS_A</b><br/>返回值 → 列表<br/>The entities \"返回值\" (Return Value) and \"列表\" (List) are related concepts. \"返回值\" is a type of value that is produced as the result of a function or operation, while \"列表\" is a data structure commonly used...",
+    "color": {
+      "color": "#2B7CE9",
+      "highlight": "#2B7CE9"
+    },
+    "width": 5,
+    "arrows": {
+      "to": {
+        "enabled": true,
+        "type": "arrow"
+      }
+    },
+    "dashes": false,
+    "smooth": {
+      "enabled": true,
+      "type": "dynamic"
+    },
+    "physics": true
+  },
+  {
+    "id": "5bd9f346",
+    "from": "WHILE循环",
+    "to": "列表",
+    "label": "USES",
+    "title": "<b>USES</b><br/>WHILE循环 → 列表<br/>USES...",
+    "color": {
+      "color": "#00CED1",
+      "highlight": "#00CED1"
+    },
+    "width": 5,
+    "arrows": {
+      "to": {
+        "enabled": true,
+        "type": "bar"
+      }
+    },
+    "dashes": false,
+    "smooth": {
+      "enabled": true,
+      "type": "dynamic"
+    },
+    "physics": true
+  },
+  {
+    "id": "df28b0d1",
+    "from": "列表",
+    "to": "WHILE循环",
+    "label": "USES",
+    "title": "<b>USES</b><br/>列表 → WHILE循环<br/>USES...",
+    "color": {
+      "color": "#00CED1",
+      "highlight": "#00CED1"
+    },
+    "width": 5,
+    "arrows": {
+      "to": {
+        "enabled": true,
+        "type": "bar"
+      }
+    },
+    "dashes": false,
+    "smooth": {
+      "enabled": true,
+      "type": "dynamic"
+    },
+    "physics": true
+  },
+  {
+    "id": "eb470027",
+    "from": "实参",
+    "to": "返回值",
+    "label": "RELATED_TO",
+    "title": "<b>RELATED_TO</b><br/>实参 → 返回值<br/>RELATED_TO...",
+    "color": {
+      "color": "#808080",
+      "highlight": "#808080"
+    },
+    "width": 5,
+    "arrows": {
+      "to": {
+        "enabled": true,
+        "type": "arrow"
+      }
+    },
+    "dashes": [
+      3,
+      3
+    ],
+    "smooth": {
+      "enabled": true,
+      "type": "dynamic"
+    },
+    "physics": true
+  },
+  {
+    "id": "a14b942e",
+    "from": "返回值",
+    "to": "WHILE循环",
+    "label": "LEADS_TO",
+    "title": "<b>LEADS_TO</b><br/>返回值 → WHILE循环<br/>LEADS_TO...",
+    "color": {
+      "color": "#C0C0C0",
+      "highlight": "#C0C0C0"
+    },
+    "width": 5,
+    "arrows": {
+      "to": {
+        "enabled": true,
+        "type": "arrow"
+      }
+    },
+    "dashes": [
+      2,
+      2
+    ],
+    "smooth": {
+      "enabled": true,
+      "type": "dynamic"
+    },
+    "physics": true
+  },
+  {
+    "id": "4c0481d0",
+    "from": "函数",
+    "to": "函数",
+    "label": "COLLABORATES_WITH",
+    "title": "<b>COLLABORATES_WITH</b><br/>函数 → 函数<br/>COLLABORATES_WITH...",
+    "color": {
+      "color": "#9A4DFF",
+      "highlight": "#9A4DFF"
+    },
+    "width": 5,
+    "arrows": {
+      "to": {
+        "enabled": true,
+        "type": "circle"
+      }
+    },
+    "dashes": false,
+    "smooth": {
+      "enabled": true,
+      "type": "dynamic"
+    },
+    "physics": true
+  },
+  {
+    "id": "261323fb",
+    "from": "列表",
+    "to": "实参",
+    "label": "IS_A",
+    "title": "<b>IS_A</b><br/>列表 → 实参<br/>IS_A...",
+    "color": {
+      "color": "#2B7CE9",
+      "highlight": "#2B7CE9"
+    },
+    "width": 5,
+    "arrows": {
+      "to": {
+        "enabled": true,
+        "type": "arrow"
+      }
+    },
+    "dashes": false,
+    "smooth": {
+      "enabled": true,
+      "type": "dynamic"
+    },
+    "physics": true
+  },
+  {
+    "id": "44380e40",
+    "from": "列表",
+    "to": "列表",
+    "label": "MENTIONS",
+    "title": "<b>MENTIONS</b><br/>列表 → 列表<br/>MENTIONS...",
+    "color": {
+      "color": "#848484",
+      "highlight": "#848484"
+    },
+    "width": 5,
+    "arrows": {
+      "to": {
+        "enabled": true,
+        "type": "arrow"
+      }
+    },
+    "dashes": [
+      5,
+      5
+    ],
+    "smooth": {
+      "enabled": true,
+      "type": "dynamic"
+    },
+    "physics": true
+  },
+  {
+    "id": "8edd00b6",
+    "from": "关键字实参",
+    "to": "形参",
+    "label": "RELATED_TO",
+    "title": "<b>RELATED_TO</b><br/>关键字实参 → 形参<br/>RELATED_TO...",
+    "color": {
+      "color": "#808080",
+      "highlight": "#808080"
+    },
+    "width": 5,
+    "arrows": {
+      "to": {
+        "enabled": true,
+        "type": "arrow"
+      }
+    },
+    "dashes": [
+      3,
+      3
+    ],
+    "smooth": {
+      "enabled": true,
+      "type": "dynamic"
+    },
+    "physics": true
+  },
+  {
+    "id": "2572a10d",
+    "from": "默认值",
+    "to": "形参",
+    "label": "HAS_PROPERTY",
+    "title": "<b>HAS_PROPERTY</b><br/>默认值 → 形参<br/>HAS_PROPERTY...",
+    "color": {
+      "color": "#C0C0C0",
+      "highlight": "#C0C0C0"
+    },
+    "width": 5,
+    "arrows": {
+      "to": {
+        "enabled": true,
+        "type": "arrow"
+      }
+    },
+    "dashes": [
+      2,
+      2
+    ],
+    "smooth": {
+      "enabled": true,
+      "type": "dynamic"
+    },
+    "physics": true
+  },
+  {
+    "id": "6df383ca",
+    "from": "函数",
+    "to": "位置实参的顺序",
+    "label": "HAS_PROPERTY",
+    "title": "<b>HAS_PROPERTY</b><br/>函数 → 位置实参的顺序<br/>HAS_PROPERTY...",
+    "color": {
+      "color": "#C0C0C0",
+      "highlight": "#C0C0C0"
+    },
+    "width": 5,
+    "arrows": {
+      "to": {
+        "enabled": true,
+        "type": "arrow"
+      }
+    },
+    "dashes": [
+      2,
+      2
+    ],
+    "smooth": {
+      "enabled": true,
+      "type": "dynamic"
+    },
+    "physics": true
+  },
+  {
+    "id": "cd87d398",
+    "from": "关键字实参",
+    "to": "默认值",
+    "label": "OCCURS_BEFORE",
+    "title": "<b>OCCURS_BEFORE</b><br/>关键字实参 → 默认值<br/>OCCURS_BEFORE...",
+    "color": {
+      "color": "#C0C0C0",
+      "highlight": "#C0C0C0"
+    },
+    "width": 5,
+    "arrows": {
+      "to": {
+        "enabled": true,
+        "type": "arrow"
+      }
+    },
+    "dashes": [
+      2,
+      2
+    ],
+    "smooth": {
+      "enabled": true,
+      "type": "dynamic"
+    },
+    "physics": true
+  },
+  {
+    "id": "e733d6f8",
+    "from": "形参",
+    "to": "参数列表",
+    "label": "CONTAINS",
+    "title": "<b>CONTAINS</b><br/>形参 → 参数列表<br/>CONTAINS...",
+    "color": {
+      "color": "#32CD32",
+      "highlight": "#32CD32"
+    },
+    "width": 5,
+    "arrows": {
+      "to": {
+        "enabled": true,
+        "type": "box"
+      }
+    },
+    "dashes": false,
+    "smooth": {
+      "enabled": true,
+      "type": "dynamic"
+    },
+    "physics": true
+  },
+  {
+    "id": "495ae7b1",
+    "from": "形参",
+    "to": "参数",
+    "label": "SIMILAR_TO",
+    "title": "<b>SIMILAR_TO</b><br/>形参 → 参数<br/>SIMILAR_TO...",
+    "color": {
+      "color": "#C0C0C0",
+      "highlight": "#C0C0C0"
+    },
+    "width": 5,
+    "arrows": {
+      "to": {
+        "enabled": true,
+        "type": "arrow"
+      }
+    },
+    "dashes": [
+      2,
+      2
+    ],
+    "smooth": {
+      "enabled": true,
+      "type": "dynamic"
+    },
+    "physics": true
+  },
+  {
+    "id": "2f076d99",
+    "from": "参数列表行",
+    "to": "参数列表",
+    "label": "PART_OF",
+    "title": "<b>PART_OF</b><br/>参数列表行 → 参数列表<br/>PART_OF...",
+    "color": {
+      "color": "#4AD63A",
+      "highlight": "#4AD63A"
+    },
+    "width": 5,
+    "arrows": {
+      "to": {
+        "enabled": true,
+        "type": "arrow"
+      }
+    },
+    "dashes": false,
+    "smooth": {
+      "enabled": true,
+      "type": "dynamic"
+    },
+    "physics": true
+  },
+  {
+    "id": "abf9582c",
+    "from": "参数",
+    "to": "参数列表",
+    "label": "PART_OF",
+    "title": "<b>PART_OF</b><br/>参数 → 参数列表<br/>PART_OF...",
+    "color": {
+      "color": "#4AD63A",
+      "highlight": "#4AD63A"
+    },
+    "width": 5,
+    "arrows": {
+      "to": {
+        "enabled": true,
+        "type": "arrow"
+      }
+    },
+    "dashes": false,
+    "smooth": {
+      "enabled": true,
+      "type": "dynamic"
+    },
+    "physics": true
+  }
+]

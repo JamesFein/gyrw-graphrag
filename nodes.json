@@ -1,0 +1,340 @@
+[
+  {
+    "id": "函数",
+    "label": "函数",
+    "title": "<b>函数</b><br/>函数是具有特定名称的代码块，用于封装和完成特定的操作或任务。通过定义函数，可以将相关的代码组织在一起，实现结构化编程和代码复用。函数通常包含形参（参数变量），用于在调用时接收外部传入的数据（实参），并可根据需要对这些数据进行处理。函数可以接受多种类型的参数，包括位置实参和关键字实参，还可以为参数设置默认值，使某些参数变为可选，从而提升函数的灵活性和适用性。\n\n函数在被调用时会执行其内部的操作，并可...",
+    "group": "函数",
+    "color": {
+      "background": "#97C2FC",
+      "border": "#2B7CE9",
+      "highlight": {
+        "background": "#D2E5FF",
+        "border": "#2B7CE9"
+      }
+    },
+    "shape": "dot",
+    "size": 40,
+    "font": {
+      "size": 10,
+      "color": "#ffffff",
+      "face": "Arial",
+      "align": "center",
+      "vadjust": 0,
+      "strokeWidth": 1,
+      "strokeColor": "#000000"
+    },
+    "physics": true
+  },
+  {
+    "id": "形参",
+    "label": "形参",
+    "title": "<b>形参</b><br/>“形参”是指在函数定义时，在括号内声明的变量名，用于接收调用函数时传递进来的实参值。形参决定了函数可以接受哪些输入，以及函数调用时需要提供哪些数据。它们在函数体内被使用，是函数完成任务所需的信息。例如，在函数describe_pet中，animal_type和pet_name就是形参；在print_models(unprinted_designs, completed_models)中，unpri...",
+    "group": "形参",
+    "color": {
+      "background": "#97C2FC",
+      "border": "#2B7CE9",
+      "highlight": {
+        "background": "#D2E5FF",
+        "border": "#2B7CE9"
+      }
+    },
+    "shape": "dot",
+    "size": 40,
+    "font": {
+      "size": 10,
+      "color": "#ffffff",
+      "face": "Arial",
+      "align": "center",
+      "vadjust": 0,
+      "strokeWidth": 1,
+      "strokeColor": "#000000"
+    },
+    "physics": true
+  },
+  {
+    "id": "实参",
+    "label": "实参",
+    "title": "<b>实参</b><br/>“实参”是指在调用函数时传递给函数的实际值。每当函数被调用时，实参为函数的形参提供具体的数据，使函数能够根据这些输入执行相应的操作。实参的类型非常灵活，可以是数字、字符串、列表等各种数据类型。例如，在调用函数时，可以传递如 'hamster'、'harry'、'jimi'、'hendrix'、f_name、l_name 等作为实参，也可以在调用 make_car 函数时传递 'subaru'、'o...",
+    "group": "实参",
+    "color": {
+      "background": "#97C2FC",
+      "border": "#2B7CE9",
+      "highlight": {
+        "background": "#D2E5FF",
+        "border": "#2B7CE9"
+      }
+    },
+    "shape": "dot",
+    "size": 40,
+    "font": {
+      "size": 10,
+      "color": "#ffffff",
+      "face": "Arial",
+      "align": "center",
+      "vadjust": 0,
+      "strokeWidth": 1,
+      "strokeColor": "#000000"
+    },
+    "physics": true
+  },
+  {
+    "id": "返回值",
+    "label": "返回值",
+    "title": "<b>返回值</b><br/>“返回值”是指函数在执行完毕后，通过return语句返回给调用者的数据或结果。返回值的主要作用是将函数内部处理的结果反馈或传递给主程序或调用者，以便后续使用。返回值可以是一个值，也可以是多个值，类型没有限制，可以是字符串、列表、字典等任意类型的数据。例如，make_car函数的返回值就是一个字典。总之，返回值是函数与外部程序之间传递处理结果的重要方式，能够有效地输出和利用函数的计算结果。...",
+    "group": "返回值",
+    "color": {
+      "background": "#97C2FC",
+      "border": "#2B7CE9",
+      "highlight": {
+        "background": "#D2E5FF",
+        "border": "#2B7CE9"
+      }
+    },
+    "shape": "dot",
+    "size": 40,
+    "font": {
+      "size": 10,
+      "color": "#ffffff",
+      "face": "Arial",
+      "align": "center",
+      "vadjust": 0,
+      "strokeWidth": 1,
+      "strokeColor": "#000000"
+    },
+    "physics": true
+  },
+  {
+    "id": "位置实参的顺序",
+    "label": "位置实参的顺序",
+    "title": "<b>位置实参的顺序</b><br/>“位置实参的顺序”是指在函数调用时，实参（即传入函数的参数）必须按照函数定义中形参（即函数声明时的参数）的排列顺序依次传递的规则。每个位置实参出现的先后顺序直接决定了它被赋值给哪个形参，因此顺序非常重要。如果实参的顺序与形参的顺序不一致，可能会导致参数对应错误，进而影响函数的正确执行。在函数调用过程中，实参按照形参列表中出现的顺序一一对应，确保每个实参都能正确地传递给相应的形参。总之，位置实参的顺...",
+    "group": "位置实参的顺序",
+    "color": {
+      "background": "#97C2FC",
+      "border": "#2B7CE9",
+      "highlight": {
+        "background": "#D2E5FF",
+        "border": "#2B7CE9"
+      }
+    },
+    "shape": "dot",
+    "size": 40,
+    "font": {
+      "size": 10,
+      "color": "#ffffff",
+      "face": "Arial",
+      "align": "center",
+      "vadjust": 0,
+      "strokeWidth": 1,
+      "strokeColor": "#000000"
+    },
+    "physics": true
+  },
+  {
+    "id": "关键字实参",
+    "label": "关键字实参",
+    "title": "<b>关键字实参</b><br/>关键字实参是指在调用函数时，通过“参数名=值”或“形参名=值”的形式，将实参显式地传递给指定的形参。与位置实参不同，关键字实参不要求按照函数形参列表的顺序进行传递，调用者可以根据需要任意排列参数顺序，只需明确指定每个参数的名称和对应的值即可。例如，可以通过 color='blue' 这样的方式传递参数。关键字实参常用于传递可选参数或任意数量的参数，能够提高代码的可读性和灵活性，避免因参数顺序错误而...",
+    "group": "关键字实参",
+    "color": {
+      "background": "#97C2FC",
+      "border": "#2B7CE9",
+      "highlight": {
+        "background": "#D2E5FF",
+        "border": "#2B7CE9"
+      }
+    },
+    "shape": "dot",
+    "size": 40,
+    "font": {
+      "size": 10,
+      "color": "#ffffff",
+      "face": "Arial",
+      "align": "center",
+      "vadjust": 0,
+      "strokeWidth": 1,
+      "strokeColor": "#000000"
+    },
+    "physics": true
+  },
+  {
+    "id": "默认值",
+    "label": "默认值",
+    "title": "<b>默认值</b><br/>“默认值”是指在函数定义时为形参指定的初始值。当调用函数时，如果没有为某个形参传递实参，则该形参会自动采用预先设定的默认值。例如，在函数定义中写作 age=None，即为形参 age 设置了默认值 None。这样，调用函数时如果未传递 age 参数，age 就会取默认值 None。默认值的设置使得函数调用更加灵活，调用者可以选择性地省略某些参数，从而简化函数的使用。总之，默认值为函数形参提供了预设...",
+    "group": "默认值",
+    "color": {
+      "background": "#97C2FC",
+      "border": "#2B7CE9",
+      "highlight": {
+        "background": "#D2E5FF",
+        "border": "#2B7CE9"
+      }
+    },
+    "shape": "dot",
+    "size": 40,
+    "font": {
+      "size": 10,
+      "color": "#ffffff",
+      "face": "Arial",
+      "align": "center",
+      "vadjust": 0,
+      "strokeWidth": 1,
+      "strokeColor": "#000000"
+    },
+    "physics": true
+  },
+  {
+    "id": "位置实参",
+    "label": "位置实参",
+    "title": "<b>位置实参</b>",
+    "group": "",
+    "color": {
+      "background": "#97C2FC",
+      "border": "#2B7CE9",
+      "highlight": {
+        "background": "#D2E5FF",
+        "border": "#2B7CE9"
+      }
+    },
+    "shape": "dot",
+    "size": 40,
+    "font": {
+      "size": 10,
+      "color": "#ffffff",
+      "face": "Arial",
+      "align": "center",
+      "vadjust": 0,
+      "strokeWidth": 1,
+      "strokeColor": "#000000"
+    },
+    "physics": true
+  },
+  {
+    "id": "列表",
+    "label": "列表",
+    "title": "<b>列表</b><br/>列表是Python中用于存储多个元素的数据结构，具有高度的灵活性和广泛的应用场景。列表可以包含任意类型的数据，并支持多种操作，包括增、删、改、查等。用户可以通过索引访问和操作列表中的元素，这使得列表非常适合用于存储和管理一组相关的数据。列表支持动态添加和删除元素，常见的操作包括遍历、添加、删除等，例如在处理unprinted_designs和completed_models等数据时尤为常见。\n\n此...",
+    "group": "列表",
+    "color": {
+      "background": "#97C2FC",
+      "border": "#2B7CE9",
+      "highlight": {
+        "background": "#D2E5FF",
+        "border": "#2B7CE9"
+      }
+    },
+    "shape": "dot",
+    "size": 40,
+    "font": {
+      "size": 10,
+      "color": "#ffffff",
+      "face": "Arial",
+      "align": "center",
+      "vadjust": 0,
+      "strokeWidth": 1,
+      "strokeColor": "#000000"
+    },
+    "physics": true
+  },
+  {
+    "id": "WHILE循环",
+    "label": "WHILE循环",
+    "title": "<b>WHILE循环</b><br/>WHILE循环是一种常用的控制结构，用于在程序中反复执行代码块，直到指定的条件不再满足为止。只要条件为真，while循环就会持续执行其包含的代码，这使得它非常适合需要多次迭代的场景。while循环常用于遍历数据结构、反复操作数据或持续提示用户输入信息。例如，在某些示例中，while循环被用来不断提示用户输入姓名，直到用户输入满足特定条件为止；在其他场景中，while循环可以用于遍历和处理未打印的设...",
+    "group": "WHILE循环",
+    "color": {
+      "background": "#97C2FC",
+      "border": "#2B7CE9",
+      "highlight": {
+        "background": "#D2E5FF",
+        "border": "#2B7CE9"
+      }
+    },
+    "shape": "dot",
+    "size": 40,
+    "font": {
+      "size": 10,
+      "color": "#ffffff",
+      "face": "Arial",
+      "align": "center",
+      "vadjust": 0,
+      "strokeWidth": 1,
+      "strokeColor": "#000000"
+    },
+    "physics": true
+  },
+  {
+    "id": "参数列表行",
+    "label": "参数列表行",
+    "title": "<b>参数列表行</b><br/>参数列表行是指在函数定义中，形参列表可能因过长而分为多行，每一行都属于参数列表的一部分。...",
+    "group": "列表",
+    "color": {
+      "background": "#97C2FC",
+      "border": "#2B7CE9",
+      "highlight": {
+        "background": "#D2E5FF",
+        "border": "#2B7CE9"
+      }
+    },
+    "shape": "dot",
+    "size": 40,
+    "font": {
+      "size": 10,
+      "color": "#ffffff",
+      "face": "Arial",
+      "align": "center",
+      "vadjust": 0,
+      "strokeWidth": 1,
+      "strokeColor": "#000000"
+    },
+    "physics": true
+  },
+  {
+    "id": "参数",
+    "label": "参数",
+    "title": "<b>参数</b><br/>参数是函数定义中用于接收实参的变量名，决定了函数可以接受哪些输入。...",
+    "group": "形参",
+    "color": {
+      "background": "#97C2FC",
+      "border": "#2B7CE9",
+      "highlight": {
+        "background": "#D2E5FF",
+        "border": "#2B7CE9"
+      }
+    },
+    "shape": "dot",
+    "size": 40,
+    "font": {
+      "size": 10,
+      "color": "#ffffff",
+      "face": "Arial",
+      "align": "center",
+      "vadjust": 0,
+      "strokeWidth": 1,
+      "strokeColor": "#000000"
+    },
+    "physics": true
+  },
+  {
+    "id": "参数列表",
+    "label": "参数列表",
+    "title": "<b>参数列表</b>",
+    "group": "",
+    "color": {
+      "background": "#97C2FC",
+      "border": "#2B7CE9",
+      "highlight": {
+        "background": "#D2E5FF",
+        "border": "#2B7CE9"
+      }
+    },
+    "shape": "dot",
+    "size": 40,
+    "font": {
+      "size": 10,
+      "color": "#ffffff",
+      "face": "Arial",
+      "align": "center",
+      "vadjust": 0,
+      "strokeWidth": 1,
+      "strokeColor": "#000000"
+    },
+    "physics": true
+  }
+]

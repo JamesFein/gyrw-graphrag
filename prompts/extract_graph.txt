@@ -1,0 +1,74 @@
+
+-目标-
+从给定的文本文档中，仅识别指定概念列表中的实体，以及这些实体之间的关系。
+
+-重要约束-
+1. 只能提取以下指定的概念作为实体：{entity_types}
+2. 不要提取任何不在上述列表中的实体
+3. 所有描述必须使用中文
+4. 实体名称必须与指定概念完全匹配
+
+-步骤-
+1. 识别实体。对于每个识别出的实体，提取以下信息：
+- entity_name: 实体名称，必须是指定概念列表中的一个
+- entity_type: 实体类型，必须是以下类型之一：[{entity_types}]
+- entity_description: 用中文详细描述该实体的属性和功能
+格式：("entity"{tuple_delimiter}<entity_name>{tuple_delimiter}<entity_type>{tuple_delimiter}<entity_description>)
+
+2. 从步骤1识别的实体中，找出所有明确相关的(source_entity, target_entity)对。
+对于每对相关实体，提取以下信息：
+- source_entity: 源实体名称，如步骤1中识别的
+- target_entity: 目标实体名称，如步骤1中识别的
+- relationship_description: 用中文解释为什么认为源实体和目标实体相关
+- relationship_strength: 表示源实体和目标实体之间关系强度的数值分数
+格式：("relationship"{tuple_delimiter}<source_entity>{tuple_delimiter}<target_entity>{tuple_delimiter}<relationship_description>{tuple_delimiter}<relationship_strength>)
+
+3. 以单个列表形式返回步骤1和2中识别的所有实体和关系。使用**{record_delimiter}**作为列表分隔符。
+
+4. 完成后，输出{completion_delimiter}
+ 
+######################
+-示例-
+######################
+示例 1:
+Entity_types: 函数,实参,形参
+Text:
+在Python中，函数是一个具名的代码块。当调用函数时，我们传递实参给函数的形参。例如，greet_user('alice')中，'alice'是实参，而函数定义中的username是形参。
+######################
+Output:
+("entity"{tuple_delimiter}函数{tuple_delimiter}函数{tuple_delimiter}函数是一个具名的代码块，用于执行特定的任务，可以接受参数并返回结果)
+{record_delimiter}
+("entity"{tuple_delimiter}实参{tuple_delimiter}实参{tuple_delimiter}实参是调用函数时传递给函数的实际值，如'alice')
+{record_delimiter}
+("entity"{tuple_delimiter}形参{tuple_delimiter}形参{tuple_delimiter}形参是函数定义中的参数名称，如username，用于接收实参的值)
+{record_delimiter}
+("relationship"{tuple_delimiter}实参{tuple_delimiter}形参{tuple_delimiter}实参是传递给形参的实际值，两者在函数调用时建立对应关系{tuple_delimiter}9)
+{completion_delimiter}
+
+######################
+示例 2:
+Entity_types: 函数,返回值,while循环,列表
+Text:
+函数可以有返回值，用return语句返回结果。while循环可以用来遍历列表中的元素，直到满足某个条件为止。
+######################
+Output:
+("entity"{tuple_delimiter}函数{tuple_delimiter}函数{tuple_delimiter}函数是可以返回值的代码块，通过return语句返回结果)
+{record_delimiter}
+("entity"{tuple_delimiter}返回值{tuple_delimiter}返回值{tuple_delimiter}返回值是函数执行完成后返回给调用者的结果)
+{record_delimiter}
+("entity"{tuple_delimiter}while循环{tuple_delimiter}while循环{tuple_delimiter}while循环是一种控制结构，可以重复执行代码直到条件不满足)
+{record_delimiter}
+("entity"{tuple_delimiter}列表{tuple_delimiter}列表{tuple_delimiter}列表是Python中存储多个元素的数据结构)
+{record_delimiter}
+("relationship"{tuple_delimiter}函数{tuple_delimiter}返回值{tuple_delimiter}函数通过return语句产生返回值{tuple_delimiter}8)
+{record_delimiter}
+("relationship"{tuple_delimiter}while循环{tuple_delimiter}列表{tuple_delimiter}while循环可以用来遍历列表中的元素{tuple_delimiter}6)
+{completion_delimiter}
+
+######################
+-Real Data-
+######################
+Entity_types: {entity_types}
+Text: {input_text}
+######################
+Output:

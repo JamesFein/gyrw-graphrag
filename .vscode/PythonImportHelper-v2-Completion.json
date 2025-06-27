@@ -1,0 +1,299 @@
+[
+    {
+        "label": "pandas",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pandas",
+        "description": "pandas",
+        "detail": "pandas",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Tuple",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "pyarrow.parquet",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pyarrow.parquet",
+        "description": "pyarrow.parquet",
+        "detail": "pyarrow.parquet",
+        "documentation": {}
+    },
+    {
+        "label": "hashlib",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "hashlib",
+        "description": "hashlib",
+        "detail": "hashlib",
+        "documentation": {}
+    },
+    {
+        "label": "re",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "re",
+        "description": "re",
+        "detail": "re",
+        "documentation": {}
+    },
+    {
+        "label": "Counter",
+        "importPath": "collections",
+        "description": "collections",
+        "isExtraImport": true,
+        "detail": "collections",
+        "documentation": {}
+    },
+    {
+        "label": "analyze_parquet_file",
+        "kind": 2,
+        "importPath": "analyze_parquet_structure",
+        "description": "analyze_parquet_structure",
+        "peekOfCode": "def analyze_parquet_file(file_path: str) -> Dict[str, Any]:\n    \"\"\"\n    分析单个parquet文件的结构\n    Args:\n        file_path: parquet文件路径\n    Returns:\n        包含文件分析结果的字典\n    \"\"\"\n    try:\n        # 读取parquet文件",
+        "detail": "analyze_parquet_structure",
+        "documentation": {}
+    },
+    {
+        "label": "find_parquet_files",
+        "kind": 2,
+        "importPath": "analyze_parquet_structure",
+        "description": "analyze_parquet_structure",
+        "peekOfCode": "def find_parquet_files(directory: str) -> List[str]:\n    \"\"\"\n    在指定目录中查找所有parquet文件\n    Args:\n        directory: 搜索目录\n    Returns:\n        parquet文件路径列表\n    \"\"\"\n    parquet_files = []\n    for root, dirs, files in os.walk(directory):",
+        "detail": "analyze_parquet_structure",
+        "documentation": {}
+    },
+    {
+        "label": "generate_analysis_report",
+        "kind": 2,
+        "importPath": "analyze_parquet_structure",
+        "description": "analyze_parquet_structure",
+        "peekOfCode": "def generate_analysis_report(analysis_results: List[Dict[str, Any]]) -> str:\n    \"\"\"\n    生成分析报告\n    Args:\n        analysis_results: 分析结果列表\n    Returns:\n        格式化的分析报告字符串\n    \"\"\"\n    report = []\n    report.append(\"=\" * 80)",
+        "detail": "analyze_parquet_structure",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "analyze_parquet_structure",
+        "description": "analyze_parquet_structure",
+        "peekOfCode": "def main():\n    \"\"\"主函数\"\"\"\n    print(\"🔍 开始分析GraphRAG Parquet文件结构...\")\n    # 查找output目录中的所有parquet文件\n    output_dir = \"output\"\n    if not os.path.exists(output_dir):\n        print(f\"❌ 错误: 找不到输出目录 '{output_dir}'\")\n        return\n    parquet_files = find_parquet_files(output_dir)\n    if not parquet_files:",
+        "detail": "analyze_parquet_structure",
+        "documentation": {}
+    },
+    {
+        "label": "analyze_relationships",
+        "kind": 2,
+        "importPath": "check_relationship_types",
+        "description": "check_relationship_types",
+        "peekOfCode": "def analyze_relationships():\n    \"\"\"分析关系数据中的关系类型\"\"\"\n    # 读取关系数据\n    df = pd.read_parquet('output/relationships.parquet')\n    print(\"🔍 分析关系类型信息\")\n    print(\"=\" * 50)\n    # 检查描述字段中的关系类型\n    print(\"\\n📋 关系描述分析:\")\n    print(f\"总关系数: {len(df)}\")\n    # 查看所有描述",
+        "detail": "check_relationship_types",
+        "documentation": {}
+    },
+    {
+        "label": "load_parquet_data",
+        "kind": 2,
+        "importPath": "convert_to_visnetwork",
+        "description": "convert_to_visnetwork",
+        "peekOfCode": "def load_parquet_data() -> Tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:\n    \"\"\"\n    加载GraphRAG生成的parquet文件\n    Returns:\n        entities, relationships, communities数据框\n    \"\"\"\n    try:\n        entities_df = pd.read_parquet(\"output/entities.parquet\")\n        relationships_df = pd.read_parquet(\"output/relationships_with_types.parquet\")\n        communities_df = pd.read_parquet(\"output/communities.parquet\")",
+        "detail": "convert_to_visnetwork",
+        "documentation": {}
+    },
+    {
+        "label": "get_node_color_by_type",
+        "kind": 2,
+        "importPath": "convert_to_visnetwork",
+        "description": "convert_to_visnetwork",
+        "peekOfCode": "def get_node_color_by_type(entity_type: str) -> Dict[str, str]:\n    \"\"\"\n    根据实体类型返回节点颜色配置\n    Args:\n        entity_type: 实体类型\n    Returns:\n        颜色配置字典\n    \"\"\"\n    color_map = {\n        \"person\": {",
+        "detail": "convert_to_visnetwork",
+        "documentation": {}
+    },
+    {
+        "label": "get_edge_style_by_type",
+        "kind": 2,
+        "importPath": "convert_to_visnetwork",
+        "description": "convert_to_visnetwork",
+        "peekOfCode": "def get_edge_style_by_type(relationship_type: str) -> Dict[str, Any]:\n    \"\"\"\n    根据关系类型返回边样式配置\n    Args:\n        relationship_type: 关系类型\n    Returns:\n        边样式配置字典\n    \"\"\"\n    style_map = {\n        \"IS_A\": {",
+        "detail": "convert_to_visnetwork",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_edge_width",
+        "kind": 2,
+        "importPath": "convert_to_visnetwork",
+        "description": "convert_to_visnetwork",
+        "peekOfCode": "def calculate_edge_width(weight: float) -> int:\n    \"\"\"\n    根据关系权重计算边宽度\n    Args:\n        weight: 关系权重\n    Returns:\n        边宽度\n    \"\"\"\n    if pd.isna(weight):\n        return 1",
+        "detail": "convert_to_visnetwork",
+        "documentation": {}
+    },
+    {
+        "label": "entity_to_node",
+        "kind": 2,
+        "importPath": "convert_to_visnetwork",
+        "description": "convert_to_visnetwork",
+        "peekOfCode": "def entity_to_node(entity_row: pd.Series) -> Dict[str, Any]:\n    \"\"\"\n    将实体数据转换为vis-network节点格式\n    Args:\n        entity_row: 实体数据行\n    Returns:\n        vis-network节点字典\n    \"\"\"\n    entity_title = str(entity_row[\"title\"])\n    entity_desc = str(entity_row.get(\"description\", \"\"))",
+        "detail": "convert_to_visnetwork",
+        "documentation": {}
+    },
+    {
+        "label": "relationship_to_edge",
+        "kind": 2,
+        "importPath": "convert_to_visnetwork",
+        "description": "convert_to_visnetwork",
+        "peekOfCode": "def relationship_to_edge(rel_row: pd.Series, edge_id: str) -> Dict[str, Any]:\n    \"\"\"\n    将关系数据转换为vis-network边格式\n    Args:\n        rel_row: 关系数据行\n        edge_id: 边ID\n    Returns:\n        vis-network边字典\n    \"\"\"\n    source = str(rel_row[\"source\"])",
+        "detail": "convert_to_visnetwork",
+        "documentation": {}
+    },
+    {
+        "label": "convert_data_to_visnetwork",
+        "kind": 2,
+        "importPath": "convert_to_visnetwork",
+        "description": "convert_to_visnetwork",
+        "peekOfCode": "def convert_data_to_visnetwork(entities_df: pd.DataFrame, \n                              relationships_df: pd.DataFrame) -> Tuple[List[Dict], List[Dict]]:\n    \"\"\"\n    将GraphRAG数据转换为vis-network格式\n    Args:\n        entities_df: 实体数据框\n        relationships_df: 关系数据框\n    Returns:\n        (nodes, edges)元组\n    \"\"\"",
+        "detail": "convert_to_visnetwork",
+        "documentation": {}
+    },
+    {
+        "label": "save_json_data",
+        "kind": 2,
+        "importPath": "convert_to_visnetwork",
+        "description": "convert_to_visnetwork",
+        "peekOfCode": "def save_json_data(nodes: List[Dict], edges: List[Dict]) -> None:\n    \"\"\"\n    保存数据为JSON文件\n    Args:\n        nodes: 节点列表\n        edges: 边列表\n    \"\"\"\n    # 保存节点数据\n    with open(\"nodes.json\", \"w\", encoding=\"utf-8\") as f:\n        json.dump(nodes, f, ensure_ascii=False, indent=2)",
+        "detail": "convert_to_visnetwork",
+        "documentation": {}
+    },
+    {
+        "label": "generate_statistics",
+        "kind": 2,
+        "importPath": "convert_to_visnetwork",
+        "description": "convert_to_visnetwork",
+        "peekOfCode": "def generate_statistics(nodes: List[Dict], edges: List[Dict]) -> None:\n    \"\"\"\n    生成数据统计信息\n    Args:\n        nodes: 节点列表\n        edges: 边列表\n    \"\"\"\n    print(\"\\n📊 数据统计:\")\n    print(\"-\" * 40)\n    # 节点统计",
+        "detail": "convert_to_visnetwork",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "convert_to_visnetwork",
+        "description": "convert_to_visnetwork",
+        "peekOfCode": "def main():\n    \"\"\"主函数\"\"\"\n    print(\"🚀 开始GraphRAG到vis-network数据转换...\")\n    try:\n        # 加载数据\n        entities_df, relationships_df, communities_df = load_parquet_data()\n        # 转换数据\n        nodes, edges = convert_data_to_visnetwork(entities_df, relationships_df)\n        # 保存数据\n        save_json_data(nodes, edges)",
+        "detail": "convert_to_visnetwork",
+        "documentation": {}
+    },
+    {
+        "label": "extract_relationship_type",
+        "kind": 2,
+        "importPath": "data_quality_report",
+        "description": "data_quality_report",
+        "peekOfCode": "def extract_relationship_type(description):\n    \"\"\"从描述中提取关系类型\"\"\"\n    # 预定义的关系类型列表\n    relation_types = [\n        'BELONGS_TO', 'IS_A', 'RELATED_TO', 'TEACHES', 'PREREQUISITE_OF',\n        'PART_OF', 'CAUSES', 'LOCATED_IN', 'MENTIONED_IN', 'WORKS_FOR',\n        'MANAGES', 'CONTAINS', 'OCCURS_BEFORE', 'LEADS_TO', 'COLLABORATES_WITH',\n        'OPPOSES', 'SIMILAR_TO', 'MENTIONS', 'CITES', 'AUTHORED_BY', 'PUBLISHED_IN',\n        'DERIVED_FROM', 'HAS_TOPIC', 'USES', 'EXTENDS', 'HAS_PROPERTY'\n    ]",
+        "detail": "data_quality_report",
+        "documentation": {}
+    },
+    {
+        "label": "generate_quality_report",
+        "kind": 2,
+        "importPath": "data_quality_report",
+        "description": "data_quality_report",
+        "peekOfCode": "def generate_quality_report():\n    \"\"\"生成数据质量报告\"\"\"\n    # 读取数据\n    df = pd.read_parquet('output/relationships.parquet')\n    print(\"📊 GraphRAG关系类型数据质量报告\")\n    print(\"=\" * 60)\n    # 基本统计\n    print(f\"\\n📈 基本统计:\")\n    print(f\"  总关系数: {len(df)}\")\n    print(f\"  唯一源节点: {df['source'].nunique()}\")",
+        "detail": "data_quality_report",
+        "documentation": {}
+    },
+    {
+        "label": "verify_relationship_fields",
+        "kind": 2,
+        "importPath": "verify_relationship_fields",
+        "description": "verify_relationship_fields",
+        "peekOfCode": "def verify_relationship_fields():\n    \"\"\"验证 relationships.parquet 中的字段结构\"\"\"\n    print(\"🔍 验证 GraphRAG relationships.parquet 文件结构\")\n    print(\"=\" * 60)\n    # 读取 relationships.parquet\n    relationships_df = pd.read_parquet('output/relationships.parquet')\n    print(f\"📊 Relationships.parquet 文件信息:\")\n    print(f\"  文件路径: output/relationships.parquet\")\n    print(f\"  行数: {len(relationships_df)}\")\n    print(f\"  列数: {len(relationships_df.columns)}\")",
+        "detail": "verify_relationship_fields",
+        "documentation": {}
+    },
+    {
+        "label": "compare_with_entities",
+        "kind": 2,
+        "importPath": "verify_relationship_fields",
+        "description": "verify_relationship_fields",
+        "peekOfCode": "def compare_with_entities():\n    \"\"\"比较 relationships.parquet 和 entities.parquet 的一致性\"\"\"\n    print(f\"\\n🔄 比较实体和关系数据的一致性:\")\n    entities_df = pd.read_parquet('output/entities.parquet')\n    relationships_df = pd.read_parquet('output/relationships.parquet')\n    # 从实体文件获取所有实体\n    entity_names = set(entities_df['title'].unique())\n    # 从关系文件获取所有节点\n    if 'source' in relationships_df.columns and 'target' in relationships_df.columns:\n        relationship_nodes = set(relationships_df['source'].unique()) | set(relationships_df['target'].unique())",
+        "detail": "verify_relationship_fields",
+        "documentation": {}
+    }
+]

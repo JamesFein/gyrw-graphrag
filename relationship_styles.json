@@ -1,0 +1,648 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "description": "GraphRAG关系类型的vis-network样式配置",
+    "created_at": "2025-06-27",
+    "total_styles": 26
+  },
+  "styles": {
+    "IS_A": {
+      "description": "层次关系 - 表示实体分类关系",
+      "color": {
+        "color": "#2B7CE9",
+        "highlight": "#1E5FCC"
+      },
+      "arrows": {
+        "to": {
+          "enabled": true,
+          "type": "arrow",
+          "scaleFactor": 1.2
+        }
+      },
+      "dashes": false,
+      "width": 2,
+      "smooth": {
+        "enabled": true,
+        "type": "dynamic"
+      },
+      "font": {
+        "size": 12,
+        "color": "#2B7CE9"
+      }
+    },
+    "PART_OF": {
+      "description": "包含关系 - 表示局部整体关系",
+      "color": {
+        "color": "#4AD63A",
+        "highlight": "#3BC42A"
+      },
+      "arrows": {
+        "to": {
+          "enabled": true,
+          "type": "arrow",
+          "scaleFactor": 1.3
+        }
+      },
+      "dashes": false,
+      "width": 3,
+      "smooth": {
+        "enabled": true,
+        "type": "dynamic"
+      },
+      "font": {
+        "size": 12,
+        "color": "#4AD63A"
+      }
+    },
+    "BELONGS_TO": {
+      "description": "归属关系 - 表示实体归属于某个类别",
+      "color": {
+        "color": "#FF69B4",
+        "highlight": "#FF1493"
+      },
+      "arrows": {
+        "to": {
+          "enabled": true,
+          "type": "arrow",
+          "scaleFactor": 1.1
+        }
+      },
+      "dashes": [10, 5],
+      "width": 2,
+      "smooth": {
+        "enabled": true,
+        "type": "dynamic"
+      },
+      "font": {
+        "size": 12,
+        "color": "#FF69B4"
+      }
+    },
+    "HAS_PROPERTY": {
+      "description": "属性关系 - 表示实体具有某种属性",
+      "color": {
+        "color": "#9370DB",
+        "highlight": "#8A2BE2"
+      },
+      "arrows": {
+        "to": {
+          "enabled": true,
+          "type": "circle",
+          "scaleFactor": 1.0
+        }
+      },
+      "dashes": false,
+      "width": 2,
+      "smooth": {
+        "enabled": true,
+        "type": "dynamic"
+      },
+      "font": {
+        "size": 12,
+        "color": "#9370DB"
+      }
+    },
+    "MENTIONS": {
+      "description": "引用关系 - 表示实体被提及",
+      "color": {
+        "color": "#848484",
+        "highlight": "#696969"
+      },
+      "arrows": {
+        "to": {
+          "enabled": true,
+          "type": "arrow",
+          "scaleFactor": 0.8
+        }
+      },
+      "dashes": [5, 5],
+      "width": 1,
+      "smooth": {
+        "enabled": true,
+        "type": "dynamic"
+      },
+      "font": {
+        "size": 11,
+        "color": "#848484"
+      }
+    },
+    "CITES": {
+      "description": "引用关系 - 表示学术引用",
+      "color": {
+        "color": "#708090",
+        "highlight": "#2F4F4F"
+      },
+      "arrows": {
+        "to": {
+          "enabled": true,
+          "type": "bar",
+          "scaleFactor": 1.0
+        }
+      },
+      "dashes": [3, 3],
+      "width": 1,
+      "smooth": {
+        "enabled": true,
+        "type": "dynamic"
+      },
+      "font": {
+        "size": 11,
+        "color": "#708090"
+      }
+    },
+    "AUTHORED_BY": {
+      "description": "作者关系 - 表示作品的作者",
+      "color": {
+        "color": "#DAA520",
+        "highlight": "#B8860B"
+      },
+      "arrows": {
+        "to": {
+          "enabled": true,
+          "type": "arrow",
+          "scaleFactor": 1.2
+        }
+      },
+      "dashes": false,
+      "width": 2,
+      "smooth": {
+        "enabled": true,
+        "type": "dynamic"
+      },
+      "font": {
+        "size": 12,
+        "color": "#DAA520"
+      }
+    },
+    "TEACHES": {
+      "description": "教学关系 - 表示教授或教学",
+      "color": {
+        "color": "#FFA500",
+        "highlight": "#FF8C00"
+      },
+      "arrows": {
+        "to": {
+          "enabled": true,
+          "type": "arrow",
+          "scaleFactor": 1.2
+        }
+      },
+      "dashes": false,
+      "width": 2,
+      "smooth": {
+        "enabled": true,
+        "type": "dynamic"
+      },
+      "font": {
+        "size": 12,
+        "color": "#FFA500"
+      }
+    },
+    "USES": {
+      "description": "使用关系 - 表示使用某种工具或方法",
+      "color": {
+        "color": "#00CED1",
+        "highlight": "#00BFFF"
+      },
+      "arrows": {
+        "to": {
+          "enabled": true,
+          "type": "bar",
+          "scaleFactor": 1.1
+        }
+      },
+      "dashes": false,
+      "width": 2,
+      "smooth": {
+        "enabled": true,
+        "type": "dynamic"
+      },
+      "font": {
+        "size": 12,
+        "color": "#00CED1"
+      }
+    },
+    "EXTENDS": {
+      "description": "扩展关系 - 表示理论或方法的扩展",
+      "color": {
+        "color": "#20B2AA",
+        "highlight": "#008B8B"
+      },
+      "arrows": {
+        "to": {
+          "enabled": true,
+          "type": "arrow",
+          "scaleFactor": 1.1
+        }
+      },
+      "dashes": [8, 4],
+      "width": 2,
+      "smooth": {
+        "enabled": true,
+        "type": "dynamic"
+      },
+      "font": {
+        "size": 12,
+        "color": "#20B2AA"
+      }
+    },
+    "DERIVED_FROM": {
+      "description": "派生关系 - 表示从某个来源派生",
+      "color": {
+        "color": "#CD853F",
+        "highlight": "#A0522D"
+      },
+      "arrows": {
+        "to": {
+          "enabled": true,
+          "type": "arrow",
+          "scaleFactor": 1.0
+        }
+      },
+      "dashes": [6, 3],
+      "width": 2,
+      "smooth": {
+        "enabled": true,
+        "type": "dynamic"
+      },
+      "font": {
+        "size": 12,
+        "color": "#CD853F"
+      }
+    },
+    "HAS_TOPIC": {
+      "description": "主题关系 - 表示文档或课程的主题",
+      "color": {
+        "color": "#DC143C",
+        "highlight": "#B22222"
+      },
+      "arrows": {
+        "to": {
+          "enabled": true,
+          "type": "circle",
+          "scaleFactor": 1.1
+        }
+      },
+      "dashes": false,
+      "width": 2,
+      "smooth": {
+        "enabled": true,
+        "type": "dynamic"
+      },
+      "font": {
+        "size": 12,
+        "color": "#DC143C"
+      }
+    },
+    "PUBLISHED_IN": {
+      "description": "发表关系 - 表示在某处发表",
+      "color": {
+        "color": "#8B4513",
+        "highlight": "#654321"
+      },
+      "arrows": {
+        "to": {
+          "enabled": true,
+          "type": "arrow",
+          "scaleFactor": 1.0
+        }
+      },
+      "dashes": false,
+      "width": 2,
+      "smooth": {
+        "enabled": true,
+        "type": "dynamic"
+      },
+      "font": {
+        "size": 12,
+        "color": "#8B4513"
+      }
+    },
+    "PREREQUISITE": {
+      "description": "前置关系 - 表示前置条件或要求",
+      "color": {
+        "color": "#FF4500",
+        "highlight": "#FF6347"
+      },
+      "arrows": {
+        "to": {
+          "enabled": true,
+          "type": "arrow",
+          "scaleFactor": 1.3
+        }
+      },
+      "dashes": false,
+      "width": 3,
+      "smooth": {
+        "enabled": true,
+        "type": "dynamic"
+      },
+      "font": {
+        "size": 12,
+        "color": "#FF4500"
+      }
+    },
+    "COLLABORATES_WITH": {
+      "description": "协作关系 - 表示合作或协作",
+      "color": {
+        "color": "#9A4DFF",
+        "highlight": "#8A2BE2"
+      },
+      "arrows": {
+        "to": {
+          "enabled": true,
+          "type": "circle",
+          "scaleFactor": 1.2
+        }
+      },
+      "dashes": false,
+      "width": 2,
+      "smooth": {
+        "enabled": true,
+        "type": "dynamic"
+      },
+      "font": {
+        "size": 12,
+        "color": "#9A4DFF"
+      }
+    },
+    "OPPOSES": {
+      "description": "对立关系 - 表示对立或冲突",
+      "color": {
+        "color": "#FA0A10",
+        "highlight": "#DC143C"
+      },
+      "arrows": {
+        "to": {
+          "enabled": true,
+          "type": "arrow",
+          "scaleFactor": 1.2
+        }
+      },
+      "dashes": [4, 4],
+      "width": 2,
+      "smooth": {
+        "enabled": true,
+        "type": "dynamic"
+      },
+      "font": {
+        "size": 12,
+        "color": "#FA0A10"
+      }
+    },
+    "CAUSES": {
+      "description": "因果关系 - 表示直接因果关系",
+      "color": {
+        "color": "#FA0A10",
+        "highlight": "#DC143C"
+      },
+      "arrows": {
+        "to": {
+          "enabled": true,
+          "type": "arrow",
+          "scaleFactor": 1.4
+        }
+      },
+      "dashes": false,
+      "width": 3,
+      "smooth": {
+        "enabled": true,
+        "type": "dynamic"
+      },
+      "font": {
+        "size": 12,
+        "color": "#FA0A10"
+      }
+    },
+    "LEADS_TO": {
+      "description": "导致关系 - 表示导致某种结果",
+      "color": {
+        "color": "#FF6347",
+        "highlight": "#FF4500"
+      },
+      "arrows": {
+        "to": {
+          "enabled": true,
+          "type": "arrow",
+          "scaleFactor": 1.2
+        }
+      },
+      "dashes": [7, 3],
+      "width": 2,
+      "smooth": {
+        "enabled": true,
+        "type": "dynamic"
+      },
+      "font": {
+        "size": 12,
+        "color": "#FF6347"
+      }
+    },
+    "CONTAINS": {
+      "description": "包含关系 - 表示容器包含内容",
+      "color": {
+        "color": "#32CD32",
+        "highlight": "#228B22"
+      },
+      "arrows": {
+        "to": {
+          "enabled": true,
+          "type": "box",
+          "scaleFactor": 1.2
+        }
+      },
+      "dashes": false,
+      "width": 2,
+      "smooth": {
+        "enabled": true,
+        "type": "dynamic"
+      },
+      "font": {
+        "size": 12,
+        "color": "#32CD32"
+      }
+    },
+    "SIMILAR_TO": {
+      "description": "相似关系 - 表示实体之间的相似性",
+      "color": {
+        "color": "#DDA0DD",
+        "highlight": "#DA70D6"
+      },
+      "arrows": {
+        "to": {
+          "enabled": true,
+          "type": "circle",
+          "scaleFactor": 1.0
+        }
+      },
+      "dashes": [5, 3],
+      "width": 1,
+      "smooth": {
+        "enabled": true,
+        "type": "dynamic"
+      },
+      "font": {
+        "size": 11,
+        "color": "#DDA0DD"
+      }
+    },
+    "RELATED_TO": {
+      "description": "相关关系 - 表示一般性的相关关系",
+      "color": {
+        "color": "#808080",
+        "highlight": "#696969"
+      },
+      "arrows": {
+        "to": {
+          "enabled": true,
+          "type": "arrow",
+          "scaleFactor": 0.9
+        }
+      },
+      "dashes": [3, 3],
+      "width": 1,
+      "smooth": {
+        "enabled": true,
+        "type": "dynamic"
+      },
+      "font": {
+        "size": 11,
+        "color": "#808080"
+      }
+    },
+    "OCCURS_BEFORE": {
+      "description": "时间关系 - 表示时间上的先后顺序",
+      "color": {
+        "color": "#4169E1",
+        "highlight": "#0000FF"
+      },
+      "arrows": {
+        "to": {
+          "enabled": true,
+          "type": "arrow",
+          "scaleFactor": 1.1
+        }
+      },
+      "dashes": [12, 4],
+      "width": 2,
+      "smooth": {
+        "enabled": true,
+        "type": "dynamic"
+      },
+      "font": {
+        "size": 12,
+        "color": "#4169E1"
+      }
+    },
+    "LOCATED_IN": {
+      "description": "位置关系 - 表示地理位置关系",
+      "color": {
+        "color": "#87CEEB",
+        "highlight": "#4682B4"
+      },
+      "arrows": {
+        "to": {
+          "enabled": true,
+          "type": "arrow",
+          "scaleFactor": 1.0
+        }
+      },
+      "dashes": false,
+      "width": 2,
+      "smooth": {
+        "enabled": true,
+        "type": "dynamic"
+      },
+      "font": {
+        "size": 12,
+        "color": "#87CEEB"
+      }
+    },
+    "WORKS_FOR": {
+      "description": "工作关系 - 表示雇佣或工作关系",
+      "color": {
+        "color": "#F0E68C",
+        "highlight": "#DAA520"
+      },
+      "arrows": {
+        "to": {
+          "enabled": true,
+          "type": "arrow",
+          "scaleFactor": 1.1
+        }
+      },
+      "dashes": false,
+      "width": 2,
+      "smooth": {
+        "enabled": true,
+        "type": "dynamic"
+      },
+      "font": {
+        "size": 12,
+        "color": "#F0E68C"
+      }
+    },
+    "MANAGES": {
+      "description": "管理关系 - 表示管理或领导关系",
+      "color": {
+        "color": "#FF8C00",
+        "highlight": "#FF7F00"
+      },
+      "arrows": {
+        "to": {
+          "enabled": true,
+          "type": "arrow",
+          "scaleFactor": 1.3
+        }
+      },
+      "dashes": false,
+      "width": 3,
+      "smooth": {
+        "enabled": true,
+        "type": "dynamic"
+      },
+      "font": {
+        "size": 12,
+        "color": "#FF8C00"
+      }
+    },
+    "UNKNOWN": {
+      "description": "未知关系 - 表示未分类的关系",
+      "color": {
+        "color": "#C0C0C0",
+        "highlight": "#A9A9A9"
+      },
+      "arrows": {
+        "to": {
+          "enabled": true,
+          "type": "arrow",
+          "scaleFactor": 0.8
+        }
+      },
+      "dashes": [2, 2],
+      "width": 1,
+      "smooth": {
+        "enabled": true,
+        "type": "dynamic"
+      },
+      "font": {
+        "size": 11,
+        "color": "#C0C0C0"
+      }
+    }
+  },
+  "usage_guide": {
+    "description": "如何使用这些样式配置",
+    "examples": {
+      "javascript": "const edgeStyle = relationshipStyles.styles[relationshipType] || relationshipStyles.styles.UNKNOWN;",
+      "python": "edge_style = relationship_styles['styles'].get(relationship_type, relationship_styles['styles']['UNKNOWN'])"
+    },
+    "color_scheme": {
+      "hierarchical": ["#2B7CE9", "#4AD63A", "#FF69B4"],
+      "functional": ["#FFA500", "#00CED1", "#20B2AA"],
+      "temporal": ["#4169E1", "#FF6347"],
+      "social": ["#9A4DFF", "#FA0A10"],
+      "neutral": ["#808080", "#C0C0C0"]
+    }
+  }
+}
