@@ -85,10 +85,14 @@ function createNetwork() {
       size: 30,
       font: {
         size: 14,
-        color: "#000000",
-        face: "Arial",
+        color: "#343434",
+        face: "arial",
+        background: "none",
+        strokeWidth: 0,
+        strokeColor: "#ffffff",
         align: "center",
         vadjust: 0, // 垂直调整，确保文字在圆心
+        multi: false,
       },
       color: {
         background: "#97C2FC",
@@ -97,8 +101,13 @@ function createNetwork() {
           background: "#D2E5FF",
           border: "#2B7CE9",
         },
+        hover: {
+          background: "#D2E5FF",
+          border: "#2B7CE9",
+        },
       },
       borderWidth: 2,
+      borderWidthSelected: 3,
       shadow: {
         enabled: true,
         color: "rgba(0,0,0,0.2)",
@@ -111,7 +120,13 @@ function createNetwork() {
           values.size = 35;
           values.borderWidth = 3;
         },
+        label: function (values, id, selected, hovering) {
+          // 保持标签居中
+          values.vadjust = 0;
+        },
       },
+      labelHighlightBold: true,
+      margin: 5,
     },
     edges: {
       width: 2,

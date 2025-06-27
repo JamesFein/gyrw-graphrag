@@ -283,15 +283,13 @@ body {
   }
 }
 
-/* vis-network 样式覆盖 - 确保节点标签居中 */
-.vis-network .vis-node {
-  text-align: center !important;
+/* vis-network 样式优化 - 避免干扰内部渲染 */
+.vis-network canvas {
+  outline: none;
 }
 
-.vis-network .vis-node .vis-label {
-  text-align: center !important;
-  vertical-align: middle !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
+/* 确保容器不影响vis-network的渲染 */
+#network-container {
+  position: relative;
+  overflow: hidden;
 }

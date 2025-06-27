@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>测试节点标签居中</title>
+    <link href="https://cdn.jsdelivr.net/npm/vis-network@9.1.12/standalone/umd/vis-network.min.css" rel="stylesheet" type="text/css" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        #network {
+            width: 800px;
+            height: 600px;
+            border: 1px solid #ccc;
+            margin: 20px 0;
+        }
+        .test-info {
+            background: #f5f5f5;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>vis-network 节点标签居中测试</h1>
+    
+    <div class="test-info">
+        <h3>测试目标：</h3>
+        <p>验证circle形状的节点标签是否能正确显示在圆心位置</p>
+        <p>使用的配置：shape: 'circle', font.align: 'center', font.vadjust: 0</p>
+    </div>
+
+    <div id="network"></div>
+
+    <div class="test-info">
+        <h3>预期结果：</h3>
+        <p>所有节点的标签文字应该显示在圆形节点的正中心</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vis-network@9.1.12/standalone/umd/vis-network.min.js"></script>
+    <script>
+        // 创建测试数据
+        const nodes = new vis.DataSet([
+            {id: 1, label: '函数'},
+            {id: 2, label: '参数'},
+            {id: 3, label: '返回值'},
+            {id: 4, label: '形参'},
+            {id: 5, label: '实参'},
+            {id: 6, label: 'WHILE循环'}
+        ]);
+
+        const edges = new vis.DataSet([
+            {from: 1, to: 2},
+            {from: 1, to: 3},
+            {from: 2, to: 4},
+            {from: 2, to: 5},
+            {from: 1, to: 6}
+        ]);
+
+        // 网络配置
+        const options = {
+            nodes: {
+                shape: 'circle',
+                size: 40,
+                font: {
+                    size: 14,
+                    color: '#343434',
+                    face: 'arial',
+                    background: 'none',
+                    strokeWidth: 0,
+                    strokeColor: '#ffffff',
+                    align: 'center',
+                    vadjust: 0, // 关键配置：垂直调整为0，确保文字在圆心
+                    multi: false
+                },
+                color: {
+                    background: '#97C2FC',
+                    border: '#2B7CE9',
+                    highlight: {
+                        background: '#D2E5FF',
+                        border: '#2B7CE9'
+                    }
+                },
+                borderWidth: 2,
+                shadow: {
+                    enabled: true,
+                    color: 'rgba(0,0,0,0.2)',
+                    size: 5,
+                    x: 2,
+                    y: 2
+                },
+                margin: 5
+            },
+            edges: {
+                width: 2,
+                color: '#848484',
+                smooth: {
+                    enabled: true,
+                    type: 'dynamic'
+                }
+            },
+            physics: {
+                enabled: true,
+                stabilization: {
+                    enabled: true,
+                    iterations: 100
+                }
+            }
+        };
+
+        // 创建网络
+        const container = document.getElementById('network');
+        const data = { nodes: nodes, edges: edges };
+        const network = new vis.Network(container, data, options);
+
+        // 稳定后停止物理引擎
+        network.on('stabilizationIterationsDone', function () {
+            network.setOptions({ physics: { enabled: false } });
+            console.log('网络已稳定，物理引擎已停止');
+        });
+
+        console.log('vis-network版本:', vis.version || 'unknown');
+        console.log('节点配置:', options.nodes);
+    </script>
+</body>
+</html>

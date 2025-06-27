@@ -211,9 +211,15 @@ def entity_to_node(entity_row: pd.Series) -> Dict[str, Any]:
         "title": title_html,
         "group": entity_type,
         "color": get_node_color_by_type(entity_type),
-        "shape": "dot",
-        "size": 25,
-        "font": {"size": 14, "color": "#000000"},
+        "shape": "circle",
+        "size": 30,
+        "font": {
+            "size": 14,
+            "color": "#343434",
+            "face": "arial",
+            "align": "center",
+            "vadjust": 0
+        },
         "physics": True
     }
 
@@ -294,9 +300,15 @@ def convert_data_to_visnetwork(entities_df: pd.DataFrame,
                     "title": f"<b>{entity_name}</b>",
                     "group": "default",
                     "color": get_node_color_by_type("default"),
-                    "shape": "dot",
-                    "size": 20,
-                    "font": {"size": 12, "color": "#000000"},
+                    "shape": "circle",
+                    "size": 25,
+                    "font": {
+                        "size": 12,
+                        "color": "#343434",
+                        "face": "arial",
+                        "align": "center",
+                        "vadjust": 0
+                    },
                     "physics": True
                 }
                 nodes.append(node)

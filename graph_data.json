@@ -13,16 +13,14 @@
           "border": "#2B7CE9"
         }
       },
-      "shape": "dot",
-      "size": 40,
+      "shape": "circle",
+      "size": 30,
       "font": {
-        "size": 10,
-        "color": "#ffffff",
-        "face": "Arial",
+        "size": 14,
+        "color": "#343434",
+        "face": "arial",
         "align": "center",
-        "vadjust": 0,
-        "strokeWidth": 1,
-        "strokeColor": "#000000"
+        "vadjust": 0
       },
       "physics": true
     },
@@ -39,16 +37,14 @@
           "border": "#2B7CE9"
         }
       },
-      "shape": "dot",
-      "size": 40,
+      "shape": "circle",
+      "size": 30,
       "font": {
-        "size": 10,
-        "color": "#ffffff",
-        "face": "Arial",
+        "size": 14,
+        "color": "#343434",
+        "face": "arial",
         "align": "center",
-        "vadjust": 0,
-        "strokeWidth": 1,
-        "strokeColor": "#000000"
+        "vadjust": 0
       },
       "physics": true
     },
@@ -65,16 +61,14 @@
           "border": "#2B7CE9"
         }
       },
-      "shape": "dot",
-      "size": 40,
+      "shape": "circle",
+      "size": 30,
       "font": {
-        "size": 10,
-        "color": "#ffffff",
-        "face": "Arial",
+        "size": 14,
+        "color": "#343434",
+        "face": "arial",
         "align": "center",
-        "vadjust": 0,
-        "strokeWidth": 1,
-        "strokeColor": "#000000"
+        "vadjust": 0
       },
       "physics": true
     },
@@ -91,16 +85,14 @@
           "border": "#2B7CE9"
         }
       },
-      "shape": "dot",
-      "size": 40,
+      "shape": "circle",
+      "size": 30,
       "font": {
-        "size": 10,
-        "color": "#ffffff",
-        "face": "Arial",
+        "size": 14,
+        "color": "#343434",
+        "face": "arial",
         "align": "center",
-        "vadjust": 0,
-        "strokeWidth": 1,
-        "strokeColor": "#000000"
+        "vadjust": 0
       },
       "physics": true
     },
@@ -117,16 +109,14 @@
           "border": "#2B7CE9"
         }
       },
-      "shape": "dot",
-      "size": 40,
+      "shape": "circle",
+      "size": 30,
       "font": {
-        "size": 10,
-        "color": "#ffffff",
-        "face": "Arial",
+        "size": 14,
+        "color": "#343434",
+        "face": "arial",
         "align": "center",
-        "vadjust": 0,
-        "strokeWidth": 1,
-        "strokeColor": "#000000"
+        "vadjust": 0
       },
       "physics": true
     },
@@ -143,16 +133,14 @@
           "border": "#2B7CE9"
         }
       },
-      "shape": "dot",
-      "size": 40,
+      "shape": "circle",
+      "size": 30,
       "font": {
-        "size": 10,
-        "color": "#ffffff",
-        "face": "Arial",
+        "size": 14,
+        "color": "#343434",
+        "face": "arial",
         "align": "center",
-        "vadjust": 0,
-        "strokeWidth": 1,
-        "strokeColor": "#000000"
+        "vadjust": 0
       },
       "physics": true
     },
@@ -169,16 +157,14 @@
           "border": "#2B7CE9"
         }
       },
-      "shape": "dot",
-      "size": 40,
+      "shape": "circle",
+      "size": 30,
       "font": {
-        "size": 10,
-        "color": "#ffffff",
-        "face": "Arial",
+        "size": 14,
+        "color": "#343434",
+        "face": "arial",
         "align": "center",
-        "vadjust": 0,
-        "strokeWidth": 1,
-        "strokeColor": "#000000"
+        "vadjust": 0
       },
       "physics": true
     },
@@ -195,16 +181,14 @@
           "border": "#2B7CE9"
         }
       },
-      "shape": "dot",
-      "size": 40,
+      "shape": "circle",
+      "size": 30,
       "font": {
-        "size": 10,
-        "color": "#ffffff",
-        "face": "Arial",
+        "size": 14,
+        "color": "#343434",
+        "face": "arial",
         "align": "center",
-        "vadjust": 0,
-        "strokeWidth": 1,
-        "strokeColor": "#000000"
+        "vadjust": 0
       },
       "physics": true
     },
@@ -221,16 +205,14 @@
           "border": "#2B7CE9"
         }
       },
-      "shape": "dot",
-      "size": 40,
+      "shape": "circle",
+      "size": 30,
       "font": {
-        "size": 10,
-        "color": "#ffffff",
-        "face": "Arial",
+        "size": 14,
+        "color": "#343434",
+        "face": "arial",
         "align": "center",
-        "vadjust": 0,
-        "strokeWidth": 1,
-        "strokeColor": "#000000"
+        "vadjust": 0
       },
       "physics": true
     },
@@ -247,16 +229,14 @@
           "border": "#2B7CE9"
         }
       },
-      "shape": "dot",
-      "size": 40,
+      "shape": "circle",
+      "size": 30,
       "font": {
-        "size": 10,
-        "color": "#ffffff",
-        "face": "Arial",
+        "size": 14,
+        "color": "#343434",
+        "face": "arial",
         "align": "center",
-        "vadjust": 0,
-        "strokeWidth": 1,
-        "strokeColor": "#000000"
+        "vadjust": 0
       },
       "physics": true
     },
@@ -273,16 +253,14 @@
           "border": "#2B7CE9"
         }
       },
-      "shape": "dot",
-      "size": 40,
+      "shape": "circle",
+      "size": 30,
       "font": {
-        "size": 10,
-        "color": "#ffffff",
-        "face": "Arial",
+        "size": 14,
+        "color": "#343434",
+        "face": "arial",
         "align": "center",
-        "vadjust": 0,
-        "strokeWidth": 1,
-        "strokeColor": "#000000"
+        "vadjust": 0
       },
       "physics": true
     },
@@ -299,16 +277,14 @@
           "border": "#2B7CE9"
         }
       },
-      "shape": "dot",
-      "size": 40,
+      "shape": "circle",
+      "size": 30,
       "font": {
-        "size": 10,
-        "color": "#ffffff",
-        "face": "Arial",
+        "size": 14,
+        "color": "#343434",
+        "face": "arial",
         "align": "center",
-        "vadjust": 0,
-        "strokeWidth": 1,
-        "strokeColor": "#000000"
+        "vadjust": 0
       },
       "physics": true
     },
@@ -325,16 +301,14 @@
           "border": "#2B7CE9"
         }
       },
-      "shape": "dot",
-      "size": 40,
+      "shape": "circle",
+      "size": 30,
       "font": {
-        "size": 10,
-        "color": "#ffffff",
-        "face": "Arial",
+        "size": 14,
+        "color": "#343434",
+        "face": "arial",
         "align": "center",
-        "vadjust": 0,
-        "strokeWidth": 1,
-        "strokeColor": "#000000"
+        "vadjust": 0
       },
       "physics": true
     }
@@ -1325,6 +1299,6 @@
   "metadata": {
     "node_count": 13,
     "edge_count": 38,
-    "generated_at": "2025-06-27T23:13:58.081432"
+    "generated_at": "2025-06-27T23:50:29.305406"
   }
 }
